@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -28,7 +29,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #0d31cf;
+    border-bottom: 2px solid #4c90af;
     padding-bottom: 5px;
 }
 
@@ -40,7 +41,7 @@ ul {
 ul li {
     display: flex;
     align-items: center;
-    background: #e7f4e4;
+    background: #9ed7f1; /* Updated color code */
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
@@ -139,7 +140,6 @@ footer {
     100% { transform: translateX(calc(-120px * 8)); } /* Scroll all images to the left */
 }
 
-
 #skills {
     position: relative;
     overflow: hidden; /* Hide the scrollbar */
@@ -150,46 +150,70 @@ footer {
     overflow: hidden;
 }
 
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 #skills-list {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
 #skills-list li {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
+    flex: 1 0 21%; /* Adjust the flex-basis to control the width */
+    margin: 10px;
     text-align: center;
 }
 
 #skills-list li img {
-    width: 120px;
+    width: 100px;
     height: auto;
 }
 
 #skills-list li span {
     display: block;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-    #skills-images-container {
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        justify-content: flex-start; /* Align images to the start */
-        padding: 10px; /* Add padding for better spacing */
+    #skills-list li {
+        flex: 1 0 46%; /* Two items per row on small screens */
     }
 
-    .skill-image {
-        flex: 0 0 auto; /* Reset flex properties to allow scrolling */
-        margin-right: 10px; /* Adjust margin between images */
+    #skills-list li img {
+        width: 80px;
     }
 
-    #skills-images-container img:last-child {
-        margin-right: 0; /* Remove margin from the last image */
+    #skills-list li span {
+        font-size: 12px;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    #skills-list li {
+        flex: 1 0 100%; /* One item per row on very small screens */
+    }
+
+    #skills-list li img {
+        width: 60px;
+    }
+
+    #skills-list li span {
+        font-size: 10px;
+    }
+}
+
+#projects a {
+    color: black;
+}
+
+#projects a:hover {
+    text-decoration: underline;
+    color: #4c90af; /* Optional: change hover color to your theme color */
 }
