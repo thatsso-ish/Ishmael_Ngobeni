@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #4c90af;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -24,11 +24,11 @@ section {
     padding: 20px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(145, 143, 143, 0.726);
 }
 
 h2 {
-    border-bottom: 2px solid #4CAF50;
+    border-bottom: 2px solid #0d31cf;
     padding-bottom: 5px;
 }
 
@@ -49,7 +49,7 @@ ul li {
 }
 
 ul li:hover {
-    background: #d4ecd9;
+    background: #b9bbbb;
 }
 
 .skill-icon {
@@ -64,7 +64,7 @@ ul li:hover .skill-icon {
 }
 
 a {
-    color: #4CAF50;
+    color: #4c90af;
     text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #4CAF50;
+    background: #4c90af;
     color: white;
     text-align: center;
     padding: 10px;
@@ -120,23 +120,25 @@ footer {
     cursor: pointer;
 }
 
-#skill-images-container {
-    overflow: hidden;
-    white-space: nowrap;
-    margin-top: 20px;
+#skills-images-container {
+    white-space: nowrap; /* Prevent line breaks */
+    overflow-x: hidden; /* Hide overflow to prevent scrollbar */
+    display: flex; /* Use flexbox for alignment */
+    animation: scrollImages 20s linear infinite; /* Animation for scrolling */
 }
 
 .skill-image {
     width: 120px;
     height: auto;
-    margin-right: 20px;
-    animation: scrollImages 4s linear infinite;
+    margin-right: 20px; /* Add some spacing between images */
+    flex-shrink: 0; /* Prevent images from shrinking */
 }
 
 @keyframes scrollImages {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% { transform: translateX(0); } /* Start from the initial position */
+    100% { transform: translateX(calc(-120px * 8)); } /* Scroll all images to the left */
 }
+
 
 #skills {
     position: relative;
@@ -170,4 +172,32 @@ footer {
 #skills-list li span {
     display: block;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    #skills-container {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent line breaks */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+    }
+
+    #skills-list {
+        display: inline-block; /* Display skills list in a line */
+        padding-right: 20px; /* Add some padding to the right to separate skills */
+    }
+
+    #skills-list li {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    #skills-list li:last-child {
+        margin-right: 0; /* Remove margin from the last skill to avoid extra space */
+    }
+
+    #scroll-left, #scroll-right {
+        display: none; /* Hide scroll buttons on smaller screens */
+    }
 }
