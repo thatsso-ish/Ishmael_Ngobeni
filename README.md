@@ -1,29 +1,36 @@
 Ishmael Ngobeni - Portfolio
 
-Table of Contents
-Description
-Sections
-Skills
-Projects
-Experience
-Contact
-Setup
+**Table of Contents**
+* Description
+* Profile
+* Skills
+* Projects
+* Experience
+* Contact
 
-Description
-This HTML file represents my professional portfolio. It includes sections detailing my profile, skills, key achievements & projects, experience, and contact information.
+**Description**
+<p>This HTML file represents my professional portfolio. It includes sections detailing my profile, skills, key achievements & projects, experience, and contact information.</p>
 
-Sections
-Profile
-This section provides an overview of my background, education, and professional interests.
+**Profile**
+<p>This section provides an overview of my background, education, and professional interests.</p>
 
-Skills
-This section showcases my proficiency in various technologies such as C++, MySQL, Python, SAS, Tableau, Excel VBA, Power BI, and R Programming. The list of skills has interactive elements that show additional details when clicked.
+**Skills**
+<p>The list of skills has interactive elements that show additional details when clicked. This section showcases my proficiency in various technologies such as:</p>
 
-Projects
-This section highlights key achievements and projects I have completed, including links to certificates and GitHub repositories. 
+* C++
+* MySQL
+* Python
+* SAS
+* Tableau
+* Excel VBA
+* Power BI
+* R Programming
+  
+**Projects**
+<p>This section highlights key achievements and projects I have completed, including links to certificates and GitHub repositories.</p>
 
-Experience
-This section provides details of my internship and job experiences, specifying tasks, roles, responsibilities and technologies used.
+**Experience**
+<p>This section provides details of my internship and job experiences, specifying tasks, roles, responsibilities and technologies used.</p>
 
-Contact
-This section provides my contact information, for professional inquiries. Which includes email, LinkedIn, and GitHub profiles.
+**Contact**
+<p>This section provides my contact information, for professional inquiries. Which includes email, LinkedIn, and GitHub profiles.</p>
