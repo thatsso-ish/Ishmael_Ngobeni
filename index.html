@@ -1,150 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishmael Ngobeni - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap5.3/css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Add FontAwesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Ngobeni Ishmael</title>
+
+    <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <header>
-        <h1>Ishmael Ngobeni</h1>
-        <p>Software Developer | Data Scientist | Data & BI Analyst</p>
-    </header>
-    
-    <section id="profile">
-        <h2>Profile</h2>
-         <p>I hold a National Diploma in Software Development from Tshwane University of Technology, providing me with a solid grasp of software development principles, algorithms, and data structures. My passion for innovation and continuous learning motivates me to stay current with cutting-edge technologies and industry advancements.</p>
+    <div class="container">
 
-         <p>I specialize in Data Analytics, Software Development, Business Intelligence, and Data Science, adept at analyzing complex data, coding innovative solutions, and deriving valuable insights. Through participation in hackathons, I've showcased my programming, critical thinking, and teamwork skills.</p>
+        <header class="header">
+            <div class="logo">
+                <a href="#home" class="logo nav-link"><span class="deco-logo">N</span>gobeni<span
+                        class="deco-logo">.</span></a>
+            </div>
 
-         <p>As a recent graduate, I am eager to apply my skills to impactful projects that drive meaningful outcomes. I thrive on collaboration and am keen to connect with like-minded individuals for future opportunities. Let's connect and explore collaboration opportunities.</p>
-    </section>
-    
-<section id="skills">
-        <h2>Skills</h2>
-        <div id="skills-container">
-            <ul id="skills-list">
-                <li onclick="showSkillInfo('C++')"
-                data-tooltip="I have experience working with C++, where I developed simple programs and created calculators and user interfaces using Embarcadero. Additionally, I utilized Microsoft Access and SQL for database storage. My skills include creating classes, functions, and working with pointers.">
-                    <img src="images/cplusplus1.jpeg" alt="C++" class="skill-icon">
-                    <span>C++</span>
-                </li>
-                
-                <li onclick="showSkillInfo('MySQL')"
-                data-tooltip="I've gained extensive experience in SQL, utilizing it for data manipulation, sorting, joins, functions, subqueries, as well as creating and merging tables. Additionally, I've worked with PL/SQL for generating reports, interacting with Oracle servers, implementing control structures, explicit cursors, exception handling, and developing procedures and functions. These skills were also applied for data storage purposes.">
-                    <img src="images/sql.png" alt="MySQL" class="skill-icon">
-                    <span>MySQL</span>
-                </li>
-                <li onclick="showSkillInfo('Python')"
-                data-tooltip="I've leveraged Python extensively to develop various machine learning models such as logistic regression, decision trees, and random forests, among others. Python has been instrumental in performing data analysis, cleaning, and manipulation tasks efficiently.">
-                    <img src="images/python1.jpg" alt="Python" class="skill-icon">
-                    <span>Python</span>
-                </li>
-                <li onclick="showSkillInfo('SAS')"
-                data-tooltip="I utilized SAS to automate report generation using SQL commands. Specifically, I employed stream processing as the automation method for production purposes.">
-                    <img src="images/sas1.jpg" alt="SAS" class="skill-icon">
-                    <span>SAS</span>
-                </li>
-                <li onclick="showSkillInfo('Tableau')"
-                data-tooltip="I've explored the artistic side of data with Tableau, transforming raw numbers into vibrant visual stories that unveil hidden insights and trends. Through captivating dashboards and interactive elements, I've navigated complex datasets with ease, uncovering valuable patterns and driving informed decision-making.">
-                    <img src="images/tableau1.jpg" alt="Tableau" class="skill-icon">
-                    <span>Tableau</span>
-                </li>
-                <li onclick="showSkillInfo('Excel VBA')"
-                data-tooltip="I've harnessed the power of Excel VBA to craft intelligent forms that streamline workflows and minimize manual tasks. One such form automates the process of removing duplicates, ensuring data integrity and accuracy. Additionally, I've developed dynamic dashboards that adapt to real-time changes, providing a visually engaging and insightful overview of key metrics and trends.">
-                    <img src="images/excel1.jpg" alt="Excel VBA" class="skill-icon">
-                    <span>Excel VBA</span>
-                </li>
-                <li onclick="showSkillInfo('Power BI')"
-                data-tooltip="I've wielded the magic of Power BI to sculpt data into vivid visual masterpieces, unraveling intricate patterns and illuminating the path to actionable insights. This dynamic tool has empowered me to craft compelling data stories, guiding decision-makers through a journey of discovery and strategic clarity.">
-                    <img src="images/bi.jpg" alt="Power BI" class="skill-icon">
-                    <span>PowerBi</span>
-                </li>
-                <li onclick="showSkillInfo('R Programming')"
-                data-tooltip="I've delved into the realm of R programming, wielding its analytical prowess to meticulously dissect data, cleanse it of imperfections, and extract valuable insights. This versatile tool has enabled me to unravel complex data sets, uncover trends, and facilitate informed decision-making through rigorous analysis and thorough data preparation.">
-                    <img src="images/r1.jpg" alt="R Programming" class="skill-icon">
-                    <span>R Programming</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <h2>Key Achievements & Projects</h2>
-        <ul>
-            <li>2nd Position winner at the Old Mutual GradHackathon 2023</li>
-            <li>Data Analytics Certificate (Old Mutual & CapaCiTi Programme)</li>
-            <li><a href="https://www.credly.com/badges/eb5823a7-8c93-4413-ac37-b7b4fb20c2d2/linked_in_profile">CompTIA Data+</a></li>
-            <li><a href="https://www.credly.com/badges/63f02704-1863-4057-9f4f-8e2de30e2956">Introduction to Data Science</a></li>
-            <li><a href="https://www.credly.com/badges/5d87d80b-e8f0-4295-b76f-49d637d8e9cb">Data Analytics Essentials</a></li>
-            <li><a href="https://www.credly.com/badges/03267878-1b72-4c96-8960-170462b6c06b">SAS Programming 1: Essentials</a></li>
-            <li><a href="https://www.udemy.com/certificate/UC-41e51005-b8f1-49fe-b8d3-7c9aefa60e80">The Business Intelligence Analyst</a></li>
-            <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/KPMG%20AU/m7W4GMqeT3bh9Nb2c_KPMG%20AU_jfBSWQvkR2vKK4RWf_169">KPMG AU - Data Analytics Job Simulation</a></li>
-            <li><a href="https://oldmutuallimited.udemy.com/certificate/UC-e9e86ca8-5ec3-45fe-9041-8b95269214a6/">Python + SQL + Tableau: Integrating Python, SQL, and Tableau</a></li>
-            <li><a href="https://github.com/thatsso-ish/cricket_predictive_model">Cricket Predictive Model</a></li>
-            <li><a href="https://github.com/thatsso-ish/hacker-news">Hacker-News</a></li>
-            <li><a href="https://github.com/thatsso-ish/sentimentals">Sentimental Analysis</a></li>
-            <li><a href="https://github.com/thatsso-ish/heart-failure-model">Heart Failure Predictive Model</a></li>
-            <li><a href="https://github.com/thatsso-ish/climateconnect">Climate Connect</a></li>
-        </ul>
-    </section>
+            <div class="sideNav">
+                <i class='bx bx-menu sideIcon'></i>
+            </div>
 
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <div>
-            <h3>Data Analyst Intern</h3>
-            <p>CapaCiTi Tech Career Accelerator (Old Mutual iWYZE) | Jan 2023 – Jan 2024</p>
-            <ul>
-                <li>Exploratory Data Analysis using Python
-                <br>Data Cleaning with Jupyter Notebook
-                <br>Data Storage using SQL Server
-                <br>Data Visualization with Tableau
-                <br>Software Integration
-                <br>Data Storytelling</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Information Trainee (Qualitative Analyst)</h3>
-            <p>Old Mutual iWYZE | Jan – Apr 2024</p>
-            <ul>
-                <li>Data Extraction using SAS
-                <br>Automation of reports
-                <br>Report generation from extracted data</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ismaelkatlego0@gmail.com">ismaelkatlego0@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ismael-ngobeni-636a2a251">Ishmael Ngobeni</a></p>
-        <p>GitHub: <a href="https://github.com/thatsso-ish">thatsso-ish</a></p>
-    </section>
 
-        <div id="skills-images-container">
-            <img src="images/cplusplus.jpeg" alt="C++" class="skill-image">
-            <img src="images/mysql.jpg" alt="MySQL" class="skill-image">
-            <img src="images/python.png" alt="Python" class="skill-image">
-            <img src="images/sas.jpeg" alt="SAS" class="skill-image">
-            <img src="images/tableau.png" alt="Tableau" class="skill-image">
-            <img src="images/excel.jpeg" alt="Excel VBA" class="skill-image">
-            <img src="images/powerbi.jpeg" alt="Power BI" class="skill-image">
-            <img src="images/r.jpeg" alt="R Programming" class="skill-image">
+            <nav class="sideBar">
+                <div class="close"><i class='bx bx-x'></i></div>
+                <a href="#home" class="active nav-link">Home</a>
+                <a href="#about " class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">contact</a>
+
+                <a href="https://wa.me/+27790526257" id="cv" class="nav-link btn-cv" target="_blank">WhatsApp Me</a>
+
+            </nav>
+
+
+
+
+
+            <nav class="navbar">
+                <a href="#home" class="active nav-link">Home</a>
+                <a href="#about " class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">contact</a>
+                <div class="cv">
+                    <a href="https://wa.me/+27790526257" id="cv" class="nav-link btn-cv" target="_blank">WhatsApp
+                        me</a>
+                </div>
+            </nav>
+
+
+
+        </header>
+
+
+        <!-- home section design -->
+        <div class="bg">
+            <section class="home" id="home">
+
+                <div class="home-content" id="">
+                    <h1>Hi, I'm <span>Ishmael</span></h1>
+                    <div class="text-animation">
+                        <h3>Software Developer Data Scientist</h3>
+                    </div>
+	                <p>
+                        Welcome to my portfolio! As a dedicated Data Scientist and Software Developer, I specialize in transforming complex data into actionable insights and developing innovative software solutions. With a strong foundation in data analysis, software integration, and dynamic dashboard design, I ensure data-driven decisions are seamlessly integrated into business processes. Passionate about leveraging cutting-edge technologies, I bring a meticulous approach to data cleaning, statistical analysis, and visualization, delivering impactful projects within strict timeframes. Explore my portfolio to see my commitment to excellence and my drive to turn data into meaningful solutions.
+                    </p>
+                        <div class="btn-box">
+                        <a href="tel:+27790526257" class="btn">Hire me</a>
+                        <a href="#contact" class="btn">Let's talk</a>
+                    </div>
+
+                    <div class="home-sci">
+                        <a href="https://www.linkedin.com/in/ismael-ngobeni-636a2a251" class="nav-link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/thatsso-ish" class="nav-link"><i class='bx bxl-github'></i></a>
+                        <a href="mailto:ismaelkatlego0@gmail.com" class="nav-link"><i class='bx bx-mail-send'></i></a>
+                    </div>
+                    
+                </div>
+            </section>
         </div>
 
-    <footer>
-        <p>&copy; 2024 Ishmael Ngobeni</p>
-    </footer>
+        <!-- about secton design -->
+        <section class="about" id="about">
+            <h2 class="heading">About <span>Me</span></h2>
 
-    <div id="skill-info-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p id="skill-info-text"></p>
-        </div>
+            <div class="about-img">
+                <img src="me.jpg" alt="">
+                <span class="cercle-spin"></span>
+            </div>
+
+            <div class="about-content">
+                <h3>Software Developer | Data Scientist | Data & BI Analyst</h3>
+                <p>As a holder of a National Diploma in Software Development 
+                    from Tshwane University of Technology, I've developed a strong foundation in 
+                    software development principles, algorithms, and data structures. 
+                    My passion for 	innovation and continuous learning drives me to stay 
+                    ahead of the curve in cutting-edge technologies and industry advancements.
+                </p>
+            </div>
+            <div class="btn-box btns">
+                <a class="aboutBtn btn" id="about-btn">Read more</a>
+            </div>
+        </section>
+
+
+        <!-- Education section design -->
+
+        <section class="education" id="education">
+            <h2 class="heading">My <span>Journey</span></h2>
+
+
+            <div class="education-row">
+                <div class="education-col">
+                    <h3 class="title">Education</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> 2019-2023</div>
+                                <h3>National Diploma in Software Development</h3>
+                                <h4>Offered by Tshwane university of technology</h4>
+                                <p>Started: 2019 January
+                                    <br>
+                                        Designing and creating software based on user and business requirements. 
+                                        Writing, testing, and debugging code. 
+                                        Integrating software components and third-party programs. 
+                                        Deploying and maintaining software systems. 
+                                        Gathering and evaluating user feedback.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i>2023-2023</div>
+                                    <h3>Data Analytics Certificate</h3>
+                                    <h4>Offered by CompTIA</h4>
+                                    <p>Started: 2023 January
+                                        <br>
+                                        This course covers baseline data analytics skills, assesses hands-on abilities and is vendor neutral and tool agnostic1.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i>2024: Inprogress</div>
+                                    <h3>Data Science</h3>
+                                    <h4>Offered by ExploreAi Academy</h4>
+
+                                    <p>Started: 2024 January
+                                        <br>
+                                        Dive deep into data visualisation, Python coding, and machine learning. 
+                                        Our Data Science course will guide you every step of the way, 
+                                        making complex topics understandable and engaging.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                </div>
+            </div>
+
+        <!-- experience -->
+
+        <div class="education-row">
+        <div class="education-col">
+            <h3 class="title">Experience</h3>
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i> 2023-2023</div>
+                                    <h3>Data Analyst Candidate</h3>
+                                    <h4>CapaCiTi Tech Career Accelerator</h4>
+                                    <p>Started: 2023 Jan - 2023 Aug
+                                        <br>
+                                        Responsibilities included exploratory data analysis using Python, data cleaning with 
+                                        Jupyter Notebook, data storage with SQL server, data visualization with Tableau, 
+                                        software integration, and data storytelling.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i> 2023-2024</div>
+                                    <h3>Data Analyst Intern</h3>
+                                    <h4>Old Mutual iWYZE</h4>
+                                    <p>Started: 2023 Sep - 2024 Jan
+                                        <br>
+                                        Responsibilities included exploratory data analysis using Python, data cleaning with 
+                                        Jupyter Notebook, data storage with SQL server, data visualization with Tableau, 
+                                        software integration, and data storytelling.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i> 2024-2024</div>
+                                    <h3>Information Technology Trainee (Qualitative Analyst)</h3>
+                                    <h4>Old Mutual iWYZE</h4>
+                                    <p>Started: 2024 Jan - 2024 Apr
+                                        <br>
+                                        Tasks involved data extraction using SAS, report automation via stream processing, 
+                                        and report generation from extracted data.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+        <!-- projects -->        
+                <div class="education-col">
+
+                    <h3 class="title">Projects</h3>
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> 2024 Jun - 2024 Jul</div>
+                                <h3>News Article Categorization Through Machine Learning: A Comprehensive NLP Approach</h3>
+                                <h3>Used technologies</h3>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Jupyter</li>
+                                    <li>MLFlow</li>
+                                    <li>StreamLit</li>
+                                </ul>
+                                <h3>About</h3>
+                                <p>
+                                    The project focuses on performing a classification analysis to predict a target variable using 
+                                    various machine learning techniques. It includes data exploration, preprocessing, and training 
+                                    models such as Logistic Regression, SVM, KNN, and Random Forest. The project leverages MLflow 
+                                    for tracking experiments, logging parameters, and managing models. Additionally, Streamlit is 
+                                    used to create an interactive web application for visualizing the results and insights. This 
+                                    comprehensive approach enhances the efficiency and accessibility of the machine learning workflow.
+                                </p>
+                                <div class="btn-box">
+                                    <a href="https://github.com/thatsso-ish/Classification" class="btn" target="_blank">code</a>
+                                    <!-- a href="#home" class="btn" target="_blank">Live</a -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> 2024 May - 2024 Jun</div>
+                                <h3>Climate Connect</h3>
+                                <h3>Used technologies</h3>
+                                <ul>
+                                    <li>Jupyter</li>
+                                </ul>
+                                <h3>About</h3>
+                                <p>
+                                    This project aims to understand the impact of agricultural activities on climate change and develop 
+                                    strategies for sustainable practices. The project uses data from the Food and Agriculture Organization 
+                                    (FAO) and the Intergovernmental Panel on Climate Change (IPCC) to analyze CO2 emissions in the agri-food 
+                                    sector and predict temperature variations.
+                                </p>
+                                <div class="btn-box">
+                                    <a href="https://github.com/thatsso-ish/climateconnect" class="btn"
+                                        target="_blank">code</a>
+                                    <!-- a href="#home" class="btn" target="_blank">Live</a -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> 2024 Mar</div>
+                                <h3>Duplicates Detector</h3>
+                                <h3>Used technologies</h3>
+                                <ul>
+                                    <li>VBA</li>
+                                </ul>
+                                <h3>About</h3>
+                                <p>
+                                    This project has significantly enhanced data processing efficiency. This initiative not only streamlined the
+                                    workflow but also improved data accessibility and accuracy. 
+                                </p>
+                                <div class="btn-box">
+                                    <a href="https://github.com/thatsso-ish/no-duplicates" class="btn"
+                                        target="_blank">code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> 2024 Jan</div>
+                                <h3>Hacker News</h3>
+                                <h3>Used technologies</h3>
+                                <ul>
+                                    <li>Python</li>
+                                </ul>
+                                <h3>About</h3>
+                                <p>
+                                    The goal of this and the following exercise is to implement each one of the CRUD operations and build a copycat of 
+                                    [Hacker News] (https://news.ycombinator.com). For those who don't know, HackerNews is a very minimal social news 
+                                    website (with a focus on computer science & technology), where users can submit links to articles and other users 
+                                    can choose to "upvote" those article links.
+                                </p>
+                                <div class="btn-box">
+                                    <a href="https://github.com/thatsso-ish/hacker-news" class="btn"
+                                        target="_blank">code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> 2023 Dec - 2024 Jan</div>
+                                <h3>Heart Failure Model</h3>
+                                <h3>Used technologies</h3>
+                                <ul>
+                                    <li>Jupyter</li>
+                                </ul>
+                                <h3>About</h3>
+                                <p>
+                                    The model basically predicts if a patient will die based on creatinine phosphokinase, ejection fraction, platelets, 
+                                    serum creatinine and serum sodium; which will lead to heart failure. I will integrate this model with SQL for storage 
+                                    and Tableau for visuals. Please credit me for any piece of work copying from this repository. I will also create a 
+                                    python module that will make it easier to work on new dataset using this model.
+                                </p>
+                                <div class="btn-box">
+                                    <a href="https://github.com/thatsso-ish/heart-failure-model" class="btn" target="_blank">code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> 2023 Nov - 2023 Dec</div>
+                                <h3>Crickek Predictive Model</h3>
+                                <h3>Used technologies</h3>
+                                <ul>
+                                    <li>Jupyter</li>
+                                </ul>
+                                <h3>About</h3>
+                                <p>
+                                    This project focuses on building a cricket prediction model to forecast the likelihood of a player getting out based on 
+                                    various features. The process begins with data preprocessing, where cricket batting data from a CSV file is cleaned and 
+                                    prepared for analysis. Key steps include handling missing values, converting data types, and scaling features using a 
+                                    custom scaler class. The core of the project involves training a logistic regression model using the preprocessed data. 
+                                    The model's performance is evaluated, and its coefficients are analyzed to understand feature impacts. Additionally, 
+                                    the trained model and scaler are saved for future use in making predictions. For enhanced interaction and visualization, 
+                                    Streamlit is used to create a web application that displays results and insights. The project also integrates with a 
+                                    MySQL database to store prediction results, ensuring a seamless workflow from data preprocessing to model deployment 
+                                    and visualization.
+                                </p>
+                                <div class="btn-box">
+                                    <a href="https://github.com/thatsso-ish/cricket_predictive_model" class="btn" target="_blank">code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- skills section  design -->
+        <section class="skills" id="skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+
+            <div class="skills-row">
+
+
+                <div class="skills-col">
+                    <div class="skills-box row">
+
+                        <div class="cplusplus col-md-3">
+                            <h4 class="logo"><i class='fab fa-cuttlefish'></i></h4>
+                            <h3>C++</h3>
+                        </div>
+
+                        <div class="sql col-md-3">
+                            <h4 class="logo"><i class='fas fa-database'></i></h4>
+                            <h3>SQL</h3>
+                        </div>
+
+                        <div class="python col-md-3">
+                            <h4 class="logo"><i class='fab fa-python'></i></h4>
+                            <h3>Python</h3>
+                        </div>
+
+                        <div class="sas col-md-3">
+                            <h4 class="logo"><i class='fas fa-database'></i></h4>
+                            <h3>SAS</h3>
+                        </div>
+                    
+                        <div class="r-programming col-md-3">
+                            <h4 class="logo"><i class='fab fa-r-project'></i></h4>
+                            <h3>R Programming</h3>
+                        </div>
+                    
+                        <div class="tableau col-md-3">
+                            <h4 class="logo"><i class='fas fa-chart-bar'></i></h4>
+                            <h3>Tableau</h3>
+                        </div>
+                    
+                        <div class="excel-vba col-md-3">
+                            <h4 class="logo"><i class='fas fa-file-excel'></i></h4>
+                            <h3>Excel VBA</h3>
+                        </div>
+                    
+                        <div class="powerbi col-md-3">
+                            <h4 class="logo"><i class='fas fa-chart-line'></i></h4>
+                            <h3>Power BI</h3>
+                        </div>
+                    
+                        <div class="streamlit col-md-3">
+                            <h4 class="logo"><i class='fas fa-stream'></i></h4>
+                            <h3>Streamlit</h3>
+                        </div>
+                    
+                        <div class="mlflow col-md-3">
+                            <h4 class="logo"><i class='fas fa-project-diagram'></i></h4>
+                            <h3>MLflow</h3>
+                        </div>
+                    
+                    </div>
+                </div>
+        </section>
+
+        <!-- design Contact section  -->
+        <section class="contact row" id="contact">
+            <div class="col-lg-8">
+                <h3 class="heading">Get In <span>Touch</span></h3>
+                <div class="contact-row">
+                    <form action="https://formspree.io/f/mkgwgvyk" method="post">
+                        <div class="row g-3 ">
+                            <div class="col-lg-6">
+                                <label for="firstName" class="form-label"> First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First name"
+                                    aria-label="First name" name="firstName">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="secondName" class="form-label"> Second Name</label>
+                                <input type="text" class="form-control" id="secondName" placeholder="Last name"
+                                    aria-label="Last name" name="secondName">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"> Your Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Your Subject</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                name="message"></textarea>
+                        </div>
+                        <div class="btn-box">
+                            <button class="btn btn-primary" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script src="bootstrap5.3/js/bootstrap.js">
+        </script>
+        <script src="js/app.js">
+        </script>
     </div>
-
-    <script src="script.js"></script>
 </body>
+
 </html>
