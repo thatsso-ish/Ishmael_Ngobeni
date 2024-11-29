@@ -61,7 +61,7 @@ This website is intended to serve as an online portfolio for Ngobeni Ishmael. It
 
 For any inquiries, please reach out through the following:
 
-- **Email**: [ismaelkatlego0@gmail.com](mailto:ismaelkatlego0@gmail.com)
+- **Email**: [ismaelkatlego0@gmail.com](mailto:itngobeniii@gmail.com)
 - **LinkedIn**: [Ishmael Ngobeni](https://www.linkedin.com/in/ismael-ngobeni-636a2a251)
 - **GitHub**: [thatsso-ish](https://github.com/thatsso-ish)
 - **WhatsApp**: [+27790526257](https://wa.me/+27790526257)
